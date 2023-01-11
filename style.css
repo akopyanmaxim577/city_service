@@ -93,6 +93,7 @@ h6 {
 /* Container */
 .container {
     max-width: 1110px;
+    padding: 0 15px;
     margin: 0 auto;
 }
 
@@ -163,6 +164,7 @@ h6 {
 
 .banner {
     background-image: url(./img/banner_back.svg);
+    background-position: center;
     height: 600px;
     width: 100%;
     background-repeat: no-repeat;
@@ -406,4 +408,19 @@ input {
     top: 15px;
     right: 38px;
 
+}
+
+/* Adaptiv */
+
+@media(max-width:776px){
+    .title_ad{
+        font-size: 27px;
+    }
+}
+
+@media(max-width:421px){
+    .title_ad{
+        font-size: 20px;
+        line-height: 36px;
+    }
 }
