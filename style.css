@@ -456,9 +456,11 @@ input {
     right: 22px;
     cursor: pointer;
 }
-.footer_content{
+
+.footer_content {
     padding-bottom: 50px;
 }
+
 /* Adaptiv */
 
 /* Header */
@@ -522,21 +524,23 @@ input {
     }
 
 }
-.db{
+
+.db {
     display: block;
 }
 
-.ls{
+.ls {
     font-size: 20px;
     padding-top: 50px;
     text-align: center;
     margin: 0 auto;
 }
 
-.ls>li{
+.ls>li {
     padding-bottom: 15px;
 }
-.dn{
+
+.dn {
     display: none;
 }
 
@@ -603,4 +607,76 @@ input {
     .sub_but {
         margin-bottom: 30px;
     }
+}
+
+
+/* get call */
+
+body #bingc-phone-button svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside {
+    fill: #CA3D00 !important;
+}
+
+body #bingc-phone-button div.bingc-phone-button-tooltip {
+    background: #CA3D00 !important;
+}
+
+body #bingc-phone-button div.bingc-phone-button-tooltip svg.bingc-phone-button-arrow polyline {
+    fill: #CA3D00 !important;
+}
+
+body #bingc-phone-button:hover svg.bingc-phone-button-circle circle.bingc-phone-button-circle-inside {
+    fill: #CA3D00 !important;
+}
+
+
+
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button {
+    background: #CA3D00 !important;
+}
+
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button:hover {
+    background: #CA3D00 !important;
+}
+
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button {
+    background: #CA3D00 !important;
+}
+
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form a.bingc-passive-phone-form-button:hover {
+    background: #CA3D00 !important;
+}
+
+body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form a.bingc-active-phone-form-button {
+    background: #CA3D00 !important;
+}
+
+body #bingc-active div.bingc-active-overlay div.bingc-active-content div.bingc-active-get-phone-form form.bingc-active-get-phone-form a.bingc-active-phone-form-button:hover {
+    background: #CA3D00 !important;
+}
+
+
+body #bingc-passive div.bingc-passive-overlay
+div.bingc-passive-content div.bingc-we-will-call-you b{
+color: #CA3D00 !important;
+}
+
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content
+div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form
+span.bingc-sample-countdown-timer{
+color: #CA3D00 !important;
+}
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content
+div.bingc-passive-get-phone-form form.bingc-passive-get-phone-form
+span.bingc-sample-countdown-timer span{
+color: #CA3D00 !important;
+}
+body #bingc-active div.bingc-active-overlay div.bingc-active-content
+div.bingc-active-get-phone-form form.bingc-active-get-phone-form
+span.bingc-sample-countdown-timer{
+color: #CA3D00 !important;
+}
+body #bingc-active div.bingc-active-overlay div.bingc-active-content
+div.bingc-active-get-phone-form form.bingc-active-get-phone-form
+span.bingc-sample-countdown-timer span{
+color: #CA3D00 !important;
 }
