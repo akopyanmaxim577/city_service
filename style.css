@@ -680,3 +680,21 @@ div.bingc-active-get-phone-form form.bingc-active-get-phone-form
 span.bingc-sample-countdown-timer span{
 color: #CA3D00 !important;
 }
+
+
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content
+div.bingc-we-already-call-you{
+color: #CA3D00 !important;
+}
+body #bingc-passive div.bingc-passive-overlay div.bingc-passive-content
+div.bingc-passive-countdown-timer {
+color: #CA3D00 !important;
+}
+body #bingc-active div.bingc-active-overlay div.bingc-active-content
+div.bingc-active-countdown-timer{
+color: #CA3D00 !important;
+}
+body #bingc-active div.bingc-active-overlay div.bingc-active-content
+div.bingc-we-already-call-you{
+color: #CA3D00 !important;
+}
