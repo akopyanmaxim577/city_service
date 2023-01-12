@@ -456,7 +456,9 @@ input {
     right: 22px;
     cursor: pointer;
 }
-
+.footer_content{
+    padding-bottom: 50px;
+}
 /* Adaptiv */
 
 /* Header */
