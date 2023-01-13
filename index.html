@@ -16,8 +16,13 @@
                     'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-N9TXZ6L');</script>
     <!-- End Google Tag Manager -->
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Ваше устройство вышло из строя? Исправим за 30 мин.</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-    <title>Document</title>
+    <script type="text/javascript">
+        emailjs.init('ksCEaPZ6lS0k0ECco')
+    </script>
 </head>
 
 <body>
@@ -48,7 +53,10 @@
                                 <li><a id="link" class="nav_link" href="http://cityservice.com.ua/contacts.html"
                                         target="_blank">Контакты</a></li>
                             </ul>
+                            <a id="order" class="call_butt bingc-action-open-passive-form db1" target="_blank">Замовити
+                                дзвінок</a>
                         </nav>
+
                     </div>
                 </div>
             </div>
@@ -71,12 +79,13 @@
                     </nav>
                     <div class="phone_block bn">
                         <ul class="phone_list">
-                            <li><a class="call_numb" href="#">(063) 065-62-63</a></li>
-                            <li><a class="call_numb" href="#">(095) 119-14-80</a></li>
-                            <li><a class="call_numb" href="#">(096) 107-29-51</a></li>
+                            <li><a class="call_numb" href="tel:0630656263">(063) 065-62-63</a></li>
+                            <li><a class="call_numb" href="tel:0951191480">(095) 119-14-80</a></li>
+                            <li><a class="call_numb" href="tel:0961072951">(096) 107-29-51</a></li>
                         </ul>
                     </div>
-                    <a class="call_butt" href="http://cityservice.com.ua/services/" target="_blank">Замовити дзвінок</a>
+                    <a id="order" class="call_butt bingc-action-open-passive-form" target="_blank">Замовити дзвінок</a>
+
                     <div id="menu_open" class="burger-menu"><img src="./img/burger-menu.svg" alt=""></div>
 
                 </div>
@@ -115,7 +124,7 @@
                         <p class="serv1_p">Устранение всех видов
                             неисправностей за <span class="sp_b_o">2 часа</span>!</p>
                         <p class="serv2_p"><span class="sp_b_o">Доставка</span> техники по Киеву</p>
-                        <a href="#" class="serv_but">Подробнее</a>
+                        <a href="http://cityservice.com.ua/" target="_blank" class="serv_but">Подробнее</a>
                     </div>
                 </div>
             </div>
@@ -129,10 +138,12 @@
                         <img src="./img/logo.svg" alt="">
                         <p class="or_label">Заявка на ремонт:</p>
                         <div class="form">
-                            <form action="post">
-                                <input type="text" placeholder="Ваше имя">
-                                <input type="text" placeholder="Номер телефона">
-                                <button class="sub_but">Отправить</button>
+                            <form id="form">
+                                <input type="text" id="from_name" name="from_name" placeholder="Ваше имя" required>
+                                <input type="email" id="email_id" name="email_id" placeholder="Ваша пошта" required>
+                                <input type="text" id="phone_id " name="phone_id" placeholder="Номер телефона"
+                                    required>
+                                <button class="sub_but" id="button" type="submit" onclick="sendMail()">Отправить</button>
 
                             </form>
                         </div>
@@ -141,9 +152,9 @@
                         <p class="or_label">Как с нами связаться:</p>
                         <div class="phone_block">
                             <ul class="phone_list">
-                                <li><a class="call_numb" href="#">(063) 065-62-63</a></li>
-                                <li><a class="call_numb" href="#">(095) 119-14-80</a></li>
-                                <li><a class="call_numb" href="#">(096) 107-29-51</a></li>
+                                <li><a class="call_numb" href="tel:0630656263">(063) 065-62-63</a></li>
+                                <li><a class="call_numb" href="tel:0951191480">(095) 119-14-80</a></li>
+                                <li><a class="call_numb" href="tel:0961072951">(096) 107-29-51</a></li>
                             </ul>
                         </div>
                         <p class="regions">Все районы Киева<br>
@@ -164,7 +175,8 @@
                         <p>Наш центральный офис находится по адресу:
                             Киев, ул. Авиаконструктора Антонова 5
                         </p>
-                        <a href="#">Перейти на страницу контактов</a>
+                        <a href="http://cityservice.com.ua/contacts.html" target="_blank">Перейти на страницу
+                            контактов</a>
                     </div>
                     <iframe class="frame_map"
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.6405088665774!2d30.461579215697075!3d50.42916917947246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cebbdf7d67a5%3A0xa6b19c9d440cb472!2z0LLRg9C70LjRhtGPINCQ0LLRltCw0LrQvtC90YHRgtGA0YPQutGC0L7RgNCwINCQ0L3RgtC-0L3QvtCy0LAsIDUsINCa0LjRl9CyLCAwMjAwMA!5e0!3m2!1suk!2sua!4v1673457659522!5m2!1suk!2sua"
@@ -179,13 +191,14 @@
 
     </footer>
     <script type="text/javascript">
-        (function (d, w, s) {
-            var widgetHash = 'cfb9k81whgev3fsz91ar', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
-            gcw.src = '//widgets.binotel.com/getcall/widgets/' + widgetHash + '.js';
-            var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
-        })(document, window, 'script');
+            (function (d, w, s) {
+                var widgetHash = 'cfb9k81whgev3fsz91ar', gcw = d.createElement(s); gcw.type = 'text/javascript'; gcw.async = true;
+                gcw.src = '//widgets.binotel.com/getcall/widgets/' + widgetHash + '.js';
+                var sn = d.getElementsByTagName(s)[0]; sn.parentNode.insertBefore(gcw, sn);
+            })(document, window, 'script');
     </script>
     <script src="./js/index.js"></script>
+
 </body>
 
 </html>

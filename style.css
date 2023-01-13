@@ -152,6 +152,13 @@ h6 {
     left: -22px;
 }
 
+@media(max-width:392px){
+    .phone_list>li::before{
+        left: 50px;
+    }
+
+}
+
 .call_numb {
     color: white;
 }
@@ -309,7 +316,9 @@ h6 {
 .form_block {
     max-width: 255px;
 }
-
+form{
+    max-width: 255px;
+}
 
 .text_map {
     max-width: 248px;
@@ -608,7 +617,9 @@ input {
         margin-bottom: 30px;
     }
 }
-
+.call_butt{
+    cursor: pointer;
+}
 
 /* get call */
 
@@ -697,4 +708,12 @@ color: #CA3D00 !important;
 body #bingc-active div.bingc-active-overlay div.bingc-active-content
 div.bingc-we-already-call-you{
 color: #CA3D00 !important;
+}
+
+.db1{
+    max-width: 171px;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    
 }
